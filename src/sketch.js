@@ -1,5 +1,17 @@
 // eric hubert
 
+function keyPressed() {
+  if (key === " " || key === "Spacebar") {
+    // Save as SVG
+    saveCanvas("mon_fractal", "svg");
+  }
+  if (key.toLowerCase() === "f") {
+    saveCanvas("mon_fractal", "png");
+  }
+  // Show instructions again after saving
+  showInstructions = true;
+}
+
 function setup() {
   createCanvas(520, 520);
   background(0);
