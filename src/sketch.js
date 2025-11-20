@@ -1,3 +1,5 @@
+// eric hubert
+
 function setup() {
   createCanvas(520, 520);
   background(0);
